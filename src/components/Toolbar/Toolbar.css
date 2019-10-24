@@ -24,20 +24,53 @@
     text-decoration: none;
 }
 
+.tabBar {
+    display: none;
+}
+
+.tabBar_icon {
+    display: none;
+}
+
 @media (max-width: 750px) {
     .toolbar_nav {
-        top: 0;
+        bottom: 0;
+        height: 80px;
         position: fixed;
-        background: #1C1C23;
+        background: #202036;
         z-index: 100;
-        border-bottom: #fff solid 1px;
+        border-top: #fff solid 1px;
     }
 
     .toolbar_nav-items {
         display: none;
     }
 
-    .toolbar_logo a {
-        z-index: 100;
+    .toolbar_logo {
+        display: none;
+    }
+
+    .tabBar {
+        display: block;
+        width: 25%;
+        height: 80px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        flex-direction: column;
+    }
+
+    .tabBar_icon {
+        display: block;
+        height: 30px;
+        margin: auto;
+    }
+
+    .tabBar a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Consolas', monospace;
+        font-weight: bold;
+        font-size: .8em;
     }
 }

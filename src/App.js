@@ -2,34 +2,33 @@ import React, { Component } from 'react';
 import './main.css';
 
 import Toolbar from './components/Toolbar/Toolbar';
-import Drawer from './components/Drawer/Drawer';
+// import Drawer from './components/Drawer/Drawer';
 
 
 class App extends Component {
-  state = {
-    drawerOpen: false
-  };
+  // state = {
+  //   drawerOpen: false
+  // };
 
-  drawerToggleClick = () => {
-    this.setState((prevState) => {
-      return {drawerOpen: !prevState.drawerOpen};
-    });
-  };
+  // drawerToggleClick = () => {
+  //   this.setState((prevState) => {
+  //     return {drawerOpen: !prevState.drawerOpen};
+  //   });
+  // };
 
   render() {
-    let drawer;
+    // let drawer;
 
-    if (this.state.drawerOpen) {
-      drawer = <Drawer />;
-      document.body.style.overflow = 'hidden';
-    }
-    else {
-      document.body.style.overflow = 'visible';
-    }
+    // if (this.state.drawerOpen) {
+    //   drawer = <Drawer />;
+    //   document.body.style.overflow = 'hidden';
+    // }
+    // else {
+    //   document.body.style.overflow = 'visible';
+    // }
     return (
       <div style={{height: '100%'}}>
-        <Toolbar drawerClickHandler={this.drawerToggleClick} />
-        {drawer}
+        <Toolbar />
       </div>
     );
   }

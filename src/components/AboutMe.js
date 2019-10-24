@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class AboutMe extends Component {
     render() {
         return (
-            <main className="container top-content">
+            <main className="container">
                     <div className="row">
                     <h1 className="heading grid-lg-6 grid-xs-12 grid-sm-8 grid-md-6">About me</h1>
                     </div>

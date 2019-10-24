@@ -9,7 +9,7 @@ export default class MyWork extends Component {
     render() {
         return (
             <section id="MyWork">
-                <div className="container top-content">
+                <div className="container">
                     <h1 className="heading">My work</h1>
                     <div className="row space">
                     <div className="textcontainer grid-lg-6 grid-md-6 grid-sm-8 grid-xs-12">

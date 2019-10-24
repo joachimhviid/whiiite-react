@@ -6,6 +6,12 @@ import {
     Link,
   } from "react-router-dom";
 
+//Icons
+import HomeIcon from '../../media/home-icon-v3.svg';
+import WorkIcon from '../../media/search-icon.svg';
+import AboutIcon from '../../media/info-icon.svg';
+import ContactIcon from '../../media/contact-icon.svg';
+
 //Pages
 import MainPage from "../../pages/index";
 import MyWorkPage from "../../pages/mywork";
@@ -13,7 +19,7 @@ import AboutPage from "../../pages/about";
 import ContactPage from "../../pages/contact";
 
 import './Toolbar.css';
-import DrawerToggle from '../Drawer/DrawerToggle';
+// import DrawerToggle from '../Drawer/DrawerToggle';
 
 const toolbar = props => (
     <Router>
@@ -22,9 +28,13 @@ const toolbar = props => (
             <div className="toolbar">
                 <nav className="toolbar_nav">
                     <div className="toolbar_logo"><Link to="../">WHIIITE</Link></div>
-                    <div>
+                    <div className="tabBar"><Link to="../"><img src={HomeIcon} className="tabBar_icon" alt="" />Home</Link></div>
+                    <div className="tabBar"><Link to="../mywork"><img src={WorkIcon} className="tabBar_icon" alt="" />My work</Link></div>
+                    <div className="tabBar"><Link to="../about"><img src={AboutIcon} className="tabBar_icon" alt="" />About me</Link></div>
+                    <div className="tabBar"><Link to="../contact"><img src={ContactIcon} className="tabBar_icon" alt="" />Contact</Link></div>
+                    {/* <div>
                         <DrawerToggle click={props.drawerClickHandler} />
-                    </div>
+                    </div> */}
                     <div className="toolbar_nav-items">
                         <ul>
                             <li><Link to="../mywork">My work</Link></li>

@@ -6,7 +6,7 @@ import DownArrow from '../media/arrow.svg'
 export default class Header extends Component {
     render() {
         return (            
-            <div className="container top-content">
+            <div className="container">
                 <div className="row">
                     <h1 className="heading grid-lg-6 grid-xs-12 grid-sm-8 grid-md-6">Welcome to my portfolio!</h1>
                 </div>
@@ -16,6 +16,7 @@ export default class Header extends Component {
                 <a href="#MyWork">
                     <img src={DownArrow} alt="Down pointing arrow" className="down" />
                 </a>
+                <div style={{height: '200px'}}></div>
             </div>
         )
     }
