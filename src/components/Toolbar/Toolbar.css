@@ -1,0 +1,43 @@
+.toolbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 72px;
+}
+
+.toolbar_nav {
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.toolbar_logo {
+    font-family: 'Consolas', monospace;
+    padding-right: 25px;
+    padding-left: 0px;
+    margin-left: 7.3%;
+}
+
+.toolbar_logo a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 750px) {
+    .toolbar_nav {
+        top: 0;
+        position: fixed;
+        background: #1C1C23;
+        z-index: 100;
+        border-bottom: #fff solid 1px;
+    }
+
+    .toolbar_nav-items {
+        display: none;
+    }
+
+    .toolbar_logo a {
+        z-index: 100;
+    }
+}

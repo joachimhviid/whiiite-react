@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './main.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Toolbar from './components/Toolbar/Toolbar';
+import Drawer from './components/Drawer/Drawer';
+
+
+class App extends Component {
+  state = {
+    drawerOpen: false
+  };
+
+  drawerToggleClick = () => {
+    this.setState((prevState) => {
+      return {drawerOpen: !prevState.drawerOpen};
+    });
+  };
+
+  render() {
+    let drawer;
+
+    if (this.state.drawerOpen) {
+      drawer = <Drawer />;
+      document.body.style.overflow = 'hidden';
+    }
+    else {
+      document.body.style.overflow = 'visible';
+    }
+    return (
+      <div style={{height: '100%'}}>
+        <Toolbar drawerClickHandler={this.drawerToggleClick} />
+        {drawer}
+      </div>
+    );
+  }
 }
 
 export default App;

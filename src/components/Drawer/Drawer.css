@@ -1,0 +1,28 @@
+.drawer {
+    height: 100%;
+    background: #383852;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.drawer ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.drawer li {
+    margin: .5em 0;
+}
+
+.drawer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
