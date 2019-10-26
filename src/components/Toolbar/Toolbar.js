@@ -32,9 +32,6 @@ const toolbar = props => (
                     <div className="tabBar" id="work"><Link to="../mywork"><img src={WorkIcon} className="tabBar_icon" alt="" />My work</Link></div>
                     <div className="tabBar" id="about"><Link to="../about"><img src={AboutIcon} className="tabBar_icon" alt="" />About me</Link></div>
                     <div className="tabBar" id="contact"><Link to="../contact"><img src={ContactIcon} className="tabBar_icon" alt="" />Contact</Link></div>
-                    {/* <div>
-                        <DrawerToggle click={props.drawerClickHandler} />
-                    </div> */}
                     <div className="toolbar_nav-items">
                         <ul>
                             <li><Link to="../mywork">My work</Link></li>

@@ -342,18 +342,6 @@ nav ul li a {
   font-family: 'Consolas', monospace;
 }
 
-/* #contact {
-  width: 140px;
-  height: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.125em;
-  background-color: transparent;
-  color: #ffffff;
-  padding: 14px 24px 14px 24px;
-  border: 3px solid #fff;
-  text-decoration: none;
-} */
-
 .dots {
   background-image: url(media/dots.svg);
   background-repeat: repeat;
