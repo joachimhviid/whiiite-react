@@ -53,10 +53,9 @@
     .tabBar {
         display: block;
         width: 25%;
-        height: 80px;
         text-align: center;
         position: relative;
-        top: 10px;
+        padding: 10px 0px 25px 0px;
         flex-direction: column;
     }
 
@@ -72,5 +71,9 @@
         font-family: 'Consolas', monospace;
         font-weight: bold;
         font-size: .8em;
+    }
+
+    .tabBar_active {
+        background: rgba(138, 162, 238, 0.51);
     }
 }

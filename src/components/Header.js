@@ -20,4 +20,17 @@ export default class Header extends Component {
             </div>
         )
     }
+    toggleActive() {
+        let home = document.getElementById("home");
+        let work = document.getElementById("work");
+        let about = document.getElementById("about");
+        let contact = document.getElementById("contact");
+
+        home.classList.add("tabBar_active");
+        work.classList.remove("tabBar_active");
+        about.classList.remove("tabBar_active");
+        contact.classList.remove("tabBar_active");
+
+        console.log("Toggled active");
+    }
 }

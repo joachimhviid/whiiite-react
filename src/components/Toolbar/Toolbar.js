@@ -28,10 +28,10 @@ const toolbar = props => (
             <div className="toolbar">
                 <nav className="toolbar_nav">
                     <div className="toolbar_logo"><Link to="../">WHIIITE</Link></div>
-                    <div className="tabBar"><Link to="../"><img src={HomeIcon} className="tabBar_icon" alt="" />Home</Link></div>
-                    <div className="tabBar"><Link to="../mywork"><img src={WorkIcon} className="tabBar_icon" alt="" />My work</Link></div>
-                    <div className="tabBar"><Link to="../about"><img src={AboutIcon} className="tabBar_icon" alt="" />About me</Link></div>
-                    <div className="tabBar"><Link to="../contact"><img src={ContactIcon} className="tabBar_icon" alt="" />Contact</Link></div>
+                    <div className="tabBar" id="home"><Link to="../"><img src={HomeIcon} className="tabBar_icon" alt="" />Home</Link></div>
+                    <div className="tabBar" id="work"><Link to="../mywork"><img src={WorkIcon} className="tabBar_icon" alt="" />My work</Link></div>
+                    <div className="tabBar" id="about"><Link to="../about"><img src={AboutIcon} className="tabBar_icon" alt="" />About me</Link></div>
+                    <div className="tabBar" id="contact"><Link to="../contact"><img src={ContactIcon} className="tabBar_icon" alt="" />Contact</Link></div>
                     {/* <div>
                         <DrawerToggle click={props.drawerClickHandler} />
                     </div> */}
